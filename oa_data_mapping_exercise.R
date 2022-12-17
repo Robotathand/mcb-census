@@ -8,6 +8,7 @@ library("dplyr")
 library("janitor")
 library("tmap")
 library("sf")
+#library("tidyverse")
 
 oa_religion_data = read_csv("data/OA data/TS030-2021-1-filtered-2022-12-12T08_41_07Z.csv") %>%
   clean_names()
