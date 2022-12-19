@@ -8,7 +8,7 @@ library("dplyr")
 library("janitor")
 library("tmap")
 library("sf")
-#library("tidyverse")
+# library("tidyverse")
 
 oa_religion_data = read_csv("data/OA data/TS030-2021-1-filtered-2022-12-12T08_41_07Z.csv") %>%
   clean_names()
@@ -155,6 +155,5 @@ draw_map = function(ltla_list, level, variable){
 draw_map(ltla_list = c("Harrow"), level = "pcon", variable = "muslim")
 draw_map(ltla_list = c("Harrow","Brent"), level = "ward", variable = "hindu")
 draw_map(ltla_list = c("Manchester","Birmingham"), level = "ward", variable = "asian_asian_british_or_asian_welsh_pakistani")
-  
     
 
